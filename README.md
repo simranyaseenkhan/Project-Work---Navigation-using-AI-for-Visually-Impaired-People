@@ -1,4 +1,4 @@
-# 🦯 Caring Assistant for the Visually Impaired
+# 🦯 Navigation using AI for Visually Impaired People
 
 This is an AI-powered real-time assistant designed to support visually impaired individuals in navigating their environment more safely and independently. The system integrates **YOLOv5 object detection**, **voice recognition**, **speech feedback**, **weather info**, **map navigation**, and an **emergency alert system**.
 
