@@ -1,66 +1,60 @@
-🦯 Navigation using AI for Visually Impaired People
-This is an AI-powered real-time assistant designed to support visually impaired individuals in navigating their environment more safely and independently. The system integrates YOLOv5 object detection, voice recognition, speech feedback, weather info, map navigation, and an emergency alert system.
+# 🦯 Caring Assistant for the Visually Impaired
 
-🧠 Features
-🔍 Object Detection & Environment Description
-Detects people, vehicles, animals, and more using YOLOv5. Describes surroundings with distance and direction estimation.
+This is an AI-powered real-time assistant designed to support visually impaired individuals in navigating their environment more safely and independently. The system integrates **YOLOv5 object detection**, **voice recognition**, **speech feedback**, **weather info**, **map navigation**, and an **emergency alert system**.
 
-🎤 Voice Command Interface
-Hands-free interaction through speech recognition (Google Speech API).
+## 🧠 Features
 
-🗣️ Voice Feedback
-Real-time verbal feedback using pyttsx3 and Windows voice API.
+- 🔍 **Object Detection & Environment Description**  
+  Detects people, vehicles, animals, and more using YOLOv5. Describes surroundings with distance and direction estimation.
 
-🌦️ Weather Updates
-Retrieves real-time weather in Dandeli using Open-Meteo API.
+- 🎤 **Voice Command Interface**  
+  Hands-free interaction through speech recognition (Google Speech API).
 
-🗺️ Map-Based Navigation
-Opens Google Maps with spoken destinations.
+- 🗣️ **Voice Feedback**  
+  Real-time verbal feedback using `pyttsx3` and Windows voice API.
 
-🆘 Emergency Alert System
-Sends alert emails with live location and contact number to predefined recipients.
+- 🌦️ **Weather Updates**  
+  =Retrieves real-time weather data using the Open-Meteo API.
 
-🚀 How It Works
-Real-Time Camera Feed
-Captures frames using OpenCV and detects objects using a lightweight YOLOv5n model.
+- 🗺️ **Map-Based Navigation**  
+  Opens Google Maps with spoken destinations.
 
-Environmental Understanding
-Based on detected object types, it deduces if the user is in a park, market, or crowded area and provides context-aware guidance.
+- 🆘 **Emergency Alert System**  
+  Sends alert emails with live location and contact number to predefined recipients.
 
-Voice Interaction
-Users can issue commands like:
+---
 
-"Describe surroundings"
+## 🚀 How It Works
 
-"Navigate to hospital"
+1. **Real-Time Camera Feed**  
+   Captures frames using OpenCV and detects objects using a lightweight YOLOv5n model.
 
-"What's the weather?"
+2. **Environmental Understanding**  
+   Based on detected object types, it deduces if the user is in a park, market, or crowded area and provides context-aware guidance.
 
-"Send alert"
+3. **Voice Interaction**  
+   Users can issue commands like:
+   - `"Describe surroundings"`
+   - `"Navigate to hospital"`
+   - `"What's the weather?"`
+   - `"Send alert"`
+   - `"Current time"`
+   - `"Stop describing"`  
+   And more!
 
-"Current time"
+4. **Emergency Handling**  
+   On voice command, it emails a formatted emergency alert with contact and location info to a list of trusted recipients.
 
-"Stop describing"
-And more!
+---
 
-Emergency Handling
-On voice command, it emails a formatted emergency alert with contact and location info to a list of trusted recipients.
+## 🛠️ Technologies Used
 
-🛠️ Technologies Used
-Python
-
-YOLOv5 (torch hub)
-
-OpenCV
-
-Kivy (GUI)
-
-SpeechRecognition
-
-pyttsx3 (Text-to-Speech)
-
-win32com.client (Windows Voice API)
-
-Open-Meteo API
-
-SMTP (Email Alerts)
+- **Python**
+- **YOLOv5 (torch hub)**
+- **OpenCV**
+- **Kivy** (GUI)
+- **SpeechRecognition**
+- **pyttsx3** (Text-to-Speech)
+- **win32com.client** (Windows Voice API)
+- **Open-Meteo API**
+- **SMTP (Email Alerts)**
